@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="24dp"
+        android:background="@drawable/profile_gradient"
+        tools:context=".profile">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_btn"
+            android:contentDescription="TODO" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/profileCard"
+            android:layout_below="@+id/backBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="25dp">
+
+            <LinearLayout
+                android:id="@+id/emailid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="24dp"
+                android:paddingHorizontal="16dp">
+
+                <ImageView
+                    android:id="@+id/user_profileImage"
+                    android:layout_width="130dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/profile_img"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mirza"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="User Name"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mirza"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="User Designation"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="8dp">
+
+                    <ImageView
+                        android:id="@+id/twitter"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginEnd="15dp"
+                        android:src="@drawable/profile_img"/>
+
+                    <ImageView
+                        android:id="@+id/facebook"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/profile_img"/>
+
+                    <ImageView
+                        android:id="@+id/linkedIn"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/profile_img"/>
+
+                    <ImageView
+                        android:id="@+id/gmail"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/profile_img"/>
+                </LinearLayout>
+
+                <view
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mirza"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Phone Number"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mirza"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mirza"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Email Address"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/emailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mirza"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="email id@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/useridTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mirza"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="User ID"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/userId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/mirza"
+                    android:hint="User ID"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="textShortMessage"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <Button
+            android:id="@+id/logOut_Btn"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/mirza_bold"
+            android:background="@drawable/pp_gradient"
+            android:layout_below="@id/profileCard"
+            android:text="LogOut" />
+    </RelativeLayout>
+</ScrollView>

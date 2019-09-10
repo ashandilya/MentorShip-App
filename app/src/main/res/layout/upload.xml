@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/OCW_upload"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="start"
+        android:background="@drawable/pp_gradient"
+        android:text="Upload Online CourseWare" />
+
+    <Button
+        android:id="@+id/routine_upload"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_below="@id/OCW_upload"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="start"
+        android:background="@drawable/pp_gradient"
+        android:text="Upload Routine" />
+
+    <Button
+        android:id="@+id/Calender_upload"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="start"
+        android:layout_below="@id/routine_upload"
+        android:background="@drawable/pp_gradient"
+        android:text="Upload Academic Calender" />
+
+    <Button
+        android:id="@+id/question_upload"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@id/Calender_upload"
+        android:layout_gravity="start"
+        android:background="@drawable/pp_gradient"
+        android:text="Upload Questions" />
+
+    <Button
+        android:id="@+id/Notes_upload"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="start"
+        android:layout_below="@id/question_upload"
+        android:background="@drawable/pp_gradient"
+        android:text="Upload Notes" />
+
+    <Button
+        android:id="@+id/suggestion_upload"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="start"
+        android:layout_below="@id/question_upload"
+        android:background="@drawable/pp_gradient"
+        android:text="Upload Exam Suggestions" />
+
+    <Button
+        android:id="@+id/student_data_upload"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="start"
+        android:layout_below="@id/suggestion_upload"
+        android:background="@drawable/pp_gradient"
+        android:text="Upload Student Data" />
+
+</RelativeLayout>

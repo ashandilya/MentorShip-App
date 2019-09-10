@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
+        android:id="@+id/message"
+        android:title="Message"
+        android:icon="@drawable/ic_message"/>
+
+    <item
+        android:id="@+id/update"
+        android:title="Create Update"
+        android:icon="@drawable/ic_add_circle_outline_black_24dp"/>
+
+    <item
+        android:id="@+id/concern"
+        android:title="Concern"
+        android:icon="@drawable/ic_concern"/>
+
+    <item
+        android:id="@+id/menu"
+        android:title="Menu"
+        android:icon="@drawable/ic_dehaze_black_24dp"/>
+
+</menu>
