@@ -9,7 +9,6 @@
         android:layout_height="wrap_content"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:padding="24dp"
-        android:background="@drawable/profile_gradient"
         tools:context=".profile">
 
         <ImageView
@@ -25,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardCornerRadius="12dp"
-            app:cardElevation="10dp"
+            app:cardElevation="12dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="25dp">
@@ -81,7 +80,7 @@
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginEnd="15dp"
-                        android:src="@drawable/profile_img"/>
+                        android:src="@drawable/twitter"/>
 
                     <ImageView
                         android:id="@+id/facebook"
@@ -89,7 +88,7 @@
                         android:layout_height="50dp"
                         android:layout_marginEnd="15dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/profile_img"/>
+                        android:src="@drawable/facebook"/>
 
                     <ImageView
                         android:id="@+id/linkedIn"
@@ -97,14 +96,14 @@
                         android:layout_height="50dp"
                         android:layout_marginEnd="15dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/profile_img"/>
+                        android:src="@drawable/linkedin"/>
 
                     <ImageView
                         android:id="@+id/gmail"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"
-                        android:src="@drawable/profile_img"/>
+                        android:src="@drawable/gmail"/>
                 </LinearLayout>
 
                 <view
@@ -179,6 +178,7 @@
                     android:textSize="25sp" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
         <Button
             android:id="@+id/logOut_Btn"
             android:layout_width="match_parent"
