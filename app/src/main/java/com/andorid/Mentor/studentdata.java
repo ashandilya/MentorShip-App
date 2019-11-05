@@ -1,8 +1,9 @@
-package com.andorid.bottom_nav_bar;
+package com.andorid.Mentor;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.andorid.bottom_nav_bar.R;
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class studentdata extends AppCompatActivity {

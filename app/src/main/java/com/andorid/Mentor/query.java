@@ -1,13 +1,15 @@
-package com.andorid.bottom_nav_bar;
+package com.andorid.Mentor;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class report extends AppCompatActivity {
+import com.andorid.bottom_nav_bar.R;
+
+public class query extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_report);
+        setContentView(R.layout.activity_query);
     }
 }

@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout
-    android:id="@+id/main"
+<!--    <android.support.v7.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>-->
+
+<LinearLayout android:id="@+id/main_LL"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:weightSum="3"
     android:padding="8dp"
-    android:layout_gravity="center_horizontal"
-    tools:context=".MainActivity"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
-
-    <HorizontalScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scrollbars="none">
-
-        <LinearLayout
-            android:id="@+id/main_LL"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            android:padding="8dp">
 
             <LinearLayout
                 android:id="@+id/top_card_LL"
@@ -37,14 +23,13 @@
                 android:layout_marginHorizontal="16dp"
                 android:orientation="horizontal"
                 android:layout_gravity="center"
-                android:weightSum="3">
+                android:layout_marginBottom="12dp"
+                android:weightSum="2">
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/mentee_card"
                     android:layout_width="140dp"
                     android:layout_height="110dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="16dp"
                     android:onClick="query"
                     app:cardCornerRadius="7dp">
 
@@ -59,11 +44,11 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/mirza_bold"
+                            android:fontFamily="@font/poppins"
                             android:gravity="center"
                             android:text="Mentees"
                             android:textColor="#fff"
-                            android:textSize="30sp"
+                            android:textSize="22sp"
                             android:textStyle="normal" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -72,14 +57,13 @@
                     android:id="@+id/issue_report_card"
                     android:layout_width="140dp"
                     android:layout_height="110dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="16dp"
+                   android:layout_marginLeft="12dp"
                     android:layout_toEndOf="@id/mentee_card"
                     android:onClick="data"
                     app:cardCornerRadius="7dp">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@drawable/m_dash_bg1"
@@ -90,42 +74,80 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/mirza_bold"
+                            android:fontFamily="@font/poppins"
                             android:text="Issued Report"
                             android:textColor="#fff"
-                            android:textSize="30sp"
-                            android:textStyle="normal" />
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:id="@+id/weekly_report_card"
-                    android:layout_width="140dp"
-                    android:layout_height="110dp"
-                    android:layout_marginTop="10dp"
-                    android:onClick="report"
-                    app:cardCornerRadius="7dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/m_dash_bg4"
-                        android:gravity="center"
-                        android:padding="18dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/mirza_bold"
-                            android:gravity="center"
-                            android:text="Weekly Report"
-                            android:textColor="#fff"
-                            android:textSize="30sp"
+                            android:textSize="22sp"
                             android:textStyle="normal" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/medium_card_LL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="12dp"
+                    android:weightSum="2">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/weekly_report_card"
+                        android:layout_width="140dp"
+                        android:layout_height="110dp"
+                        android:onClick="report"
+                        app:cardCornerRadius="7dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/m_dash_bg4"
+                            android:gravity="center"
+                            android:padding="18dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:gravity="center"
+                                android:text="Weekly Report"
+                                android:textColor="#fff"
+                                android:textSize="22sp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/profile_card"
+                        android:layout_width="140dp"
+                        android:layout_height="110dp"
+                        android:layout_marginLeft="12dp"
+                        android:onClick="report"
+                        app:cardCornerRadius="7dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/m_dash_bg4"
+                            android:gravity="center"
+                            android:padding="18dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:gravity="center"
+                                android:text="Profile"
+                                android:textColor="#fff"
+                                android:textSize="22sp"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/bottom_card_LL"
@@ -134,14 +156,12 @@
                 android:layout_marginHorizontal="16dp"
                 android:layout_gravity="center"
                 android:orientation="horizontal"
-                android:weightSum="3">
+                android:weightSum="2">
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/message_card"
                     android:layout_width="140dp"
                     android:layout_height="110dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
                     android:onClick="query"
                     app:cardCornerRadius="7dp">
 
@@ -156,11 +176,11 @@
                         <TextView
                             android:layout_width="120dp"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/mirza_bold"
+                            android:fontFamily="@font/poppins"
                             android:gravity="center"
                             android:text="Message"
                             android:textColor="#ffffff"
-                            android:textSize="30sp"
+                            android:textSize="22sp"
                             android:textStyle="normal" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -169,8 +189,7 @@
                     android:id="@+id/concern_card"
                     android:layout_width="140dp"
                     android:layout_height="110dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
+                   android:layout_marginLeft="12dp"
                     android:onClick="data"
                     app:cardCornerRadius="7dp">
 
@@ -186,42 +205,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-                            android:fontFamily="@font/mirza_bold"
+                            android:fontFamily="@font/poppins"
                             android:text="Concern"
                             android:textColor="#fff"
-                            android:textSize="26sp"
-                            android:textStyle="normal" />
-                    </LinearLayout>
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:id="@+id/profile_card"
-                    android:layout_width="140dp"
-                    android:layout_height="110dp"
-                    android:layout_marginTop="16dp"
-                    android:onClick="report"
-                    app:cardCornerRadius="7dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/m_dash_bg4"
-                        android:gravity="center"
-                        android:padding="18dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/mirza_bold"
-                            android:gravity="center"
-                            android:text="Profile"
-                            android:textColor="#fff"
-                            android:textSize="26sp"
+                            android:textSize="22sp"
                             android:textStyle="normal" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
-        </LinearLayout>
-    </HorizontalScrollView>
-</RelativeLayout>
+</LinearLayout>

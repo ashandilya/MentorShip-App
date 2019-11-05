@@ -1,20 +1,16 @@
-package com.andorid.bottom_nav_bar;
+package com.andorid.Mentor;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.NavigationView;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.support.v7.widget.Toolbar;
 import android.widget.Button;
 
-import static com.andorid.bottom_nav_bar.R.string.open;
+import com.andorid.bottom_nav_bar.R;
 
 public class MainActivity extends AppCompatActivity  implements BottomNavigationView.OnNavigationItemSelectedListener  {
 

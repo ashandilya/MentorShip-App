@@ -11,21 +11,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Profile"></activity>
-        <activity android:name=".signUp" />
-        <activity android:name=".login" />
-        <activity android:name=".splash_screen">
+        <activity android:name="com.andorid.Mentor.Profile"></activity>
+        <activity android:name="com.andorid.Mentor.signUp" />
+        <activity android:name="com.andorid.Mentor.login" />
+        <activity android:name="com.andorid.Mentor.splash_screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".studentdata" />
-        <activity android:name=".report" />
-        <activity android:name=".query" />
-        <activity android:name=".Feedback" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.andorid.Mentor.studentdata" />
+        <activity android:name="com.andorid.Mentor.report" />
+        <activity android:name="com.andorid.Mentor.query" />
+        <activity android:name="com.andorid.Mentor.Feedback" />
+        <activity android:name="com.andorid.Mentor.MainActivity">
 
             <!--
             <intent-filter>

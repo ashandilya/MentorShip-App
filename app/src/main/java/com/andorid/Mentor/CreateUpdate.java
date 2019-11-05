@@ -1,4 +1,4 @@
-package com.andorid.bottom_nav_bar;
+package com.andorid.Mentor;
 
 
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.andorid.bottom_nav_bar.R;
 
 
 /**

@@ -1,10 +1,12 @@
-package com.andorid.bottom_nav_bar;
+package com.andorid.Mentor;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.andorid.bottom_nav_bar.R;
 
 public class login extends AppCompatActivity {
 
