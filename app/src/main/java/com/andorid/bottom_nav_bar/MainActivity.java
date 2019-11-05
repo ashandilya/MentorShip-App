@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity  implements BottomNavigation
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
 
-        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1 = new Intent(MainActivity.this, Profile.class);
-                startActivity(intent1);
-                finish();
-            }
-        });
+//        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent1 = new Intent(MainActivity.this, Home.class);
+//                startActivity(intent1);
+//                finish();
+//            }
+//        });
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
         bottomNavigationView.setSelectedItemId(R.id.home);
